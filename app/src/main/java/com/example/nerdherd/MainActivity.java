@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         //initializing the buttons
         login_btn = findViewById(R.id.login_btn);
-        signup_btn = findViewById(R.id.login_btn);
+        signup_btn = findViewById(R.id.signup_btn);
 
         //signup activity intent
         signup_btn.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Context context = MainActivity.this;
-                //TODO change to login class
                 Class loginActivity = LoginActivity.class;
                 Intent intent = new Intent(context, loginActivity);
                 startActivity(intent); //transition to login screen

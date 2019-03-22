@@ -10,6 +10,7 @@
     <!-- Sign-up categories-->
     <string name="su_full_name">Full Name</string>
     <string name="su_email">Email</string>
+    <string name="su_confirm_email">Confirm Email</string>
     <string name="su_password">Password</string>
     <string name="su_confirm_password">Confirm Password</string>
     <string name="su_race">Race</string>
@@ -28,17 +29,39 @@
     <string name="su_sleep_apnea_hist">Do you currently or have you ever suffered from sleep apnea?</string>
     <string name="su_pregnant">Are you currently pregnant?</string>
     <string name="su_alcohol_consumption">Do you consume alcohol more than 7 times per week?</string>
-    <string name="su_sleep_duration">Do you sleep for at least 6-8 hours per day?</string>
+    <string name="su_sleep_duration">Do you sleep for at least 6(–, &#8211;)8 hours per day?</string>
     <string name="su_terms_of_agreement">Do you agree to allowing Smart Heart to use your personal health data for the purposes of this app?</string>
+
+    <!-- Main Page -->
+    <string name="hello_name">Hello Name</string>
+    <string name="display_weight">Weight: ______(pounds)______</string>
+    <string name="display_height">Height: ______(inches)______</string>
+    <string name="display_hypertension_risk">Risk of Hypertension?: ____(Yes/No)____</string>
+    <string name="stress_bar">Stress Level: </string>
+
+    <!-- Reset Password Page -->
+    <string name="reset_password">Reset Password</string>
+    <string name="su_new_password">Enter New Password</string>
+    <string name="su_confirm_new_password">Confirm New Password</string>
+    <string name="reset_password_btn">Done</string>
+
+    <!-- Enter Code Page -->
+    <string name="enter_code">Enter Code</string>
+    <string name="enter_btn"> Enter</string>
+
+    <!-- Send Verification Code Page -->
+    <string name="verification_btn">Send Verification Code</string>
 
     <!-- Hints -->
     <string name="su_full_name_hint">Enter full name here</string>
     <string name="su_email_hint">Enter email address here</string>
+    <string name="su_confirm_email_hint">Confirm email address here</string>
     <string name="su_password_hint">Enter password here</string>
     <string name="su_confirm_password_hint">Confirm password here</string>
     <string name="su_weight_hint">Enter your weight (lbs.) here</string>
     <string name="su_height_hint">Enter your height (inches) here</string>
     <string name="su_age_hint">Enter your age here</string>
+    <string name="su_enter_code_hint">Enter the code here</string>
 
     <!-- Radio Buttons -->
     <string name="btn_male">Male</string>
