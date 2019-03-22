@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">NerdHerd</string>
+
+    <!-- Initial page-->
+    <string name="edit_profile">Edit Profile</string>
+
+    <!-- Sign-up Page -->
+
+    <!-- Sign-up categories-->
+    <string name="su_full_name">Full Name</string>
+    <string name="su_email">Email</string>
+    <string name="su_password">Password</string>
+    <string name="su_race">Race</string>
+    <string name="su_weight">Weight</string>
+    <string name="su_height">Height</string>
+    <string name="su_age">Age</string>
+    <string name="su_gender">Gender</string>
+    <string name="su_smoke_hist">Do you have a history of smoking?</string>
+    <string name="su_diabetes_hist">Do you or your immediate family have a history of diabetes?</string>
+    <string name="su_hypertension_hist">Do you or your immediate family have a history of hypertension?</string>
+    <string name="su_chronic_kidney_hist">Do you or your immediate family have a history of chronic kidney disease?</string>
+    <string name="su_adrenal_disorder_hist">Do you or your immediate family have a history of adrenal disorders?</string>
+    <string name="su_thyroid_disorder_hist">Do you or your immediate family have a history of thyroid disorders?</string>
+    <string name="su_birth_control">Are you currently taking any form of birth control?</string>
+    <string name="su_activity_level">Are you currently active for at least 1 hour per day?</string>
+    <string name="su_sleep_apnea_hist">Do you currently or have you ever suffered from sleep apnea?</string>
+    <string name="su_pregnant">Are you currently pregnant?</string>
+    <string name="su_alcohol_consumption">Do you consume alcohol more than 7 times per week?</string>
+    <string name="su_sleep_duration">Do you sleep for at least 6-8 hours per day?</string>
+
+
+
+
+    <!-- Radio Buttons -->
+    <string name="btn_male">Male</string>
+    <string name="btn_female">Female</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="btn_back">Back</string>
+
+    <!-- Drop down Menus -->
+    <string-array name="races">
+        <item>White (Not Hispanic or Latino)</item>
+        <item>Native Hawaiian or Other Pacific Islander (Not Hispanic or Latino)</item>
+        <item>American Indian or Native Alaskan (Not Hispanic or Latino)</item>
+        <item>Asian (Not Hispanic or Latino)</item>
+        <item>Hispanic or Latino</item>
+        <item>Black or African American (Not Hispanic or Latino)</item>
+        <item>Two or more races</item>
+    </string-array>
+</resources>
+
