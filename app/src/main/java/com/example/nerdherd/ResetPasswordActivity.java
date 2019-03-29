@@ -29,7 +29,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 Context context = ResetPasswordActivity.this;
                 String newPass = newPassword.getText().toString();
                 String confNewPass = confirmNewPassword.getText().toString();
-
+                //
                 if(newPass.equals(confNewPass)){
                     //TODO send new password to DB
                     Class mainActivity = MainActivity.class;
