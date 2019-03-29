@@ -3,447 +3,502 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/signup"
-        android:gravity="center"
-        android:textSize="36sp"/>
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/edit_profile"
+                android:textSize="36sp" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/editprof"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="@string/su_full_name"
-                android:padding="8dp"
-                android:textSize="28sp"/>
+                android:textSize="28sp" />
+
             <EditText
+                android:id="@+id/full_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/su_full_name_hint"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                android:id="@+id/full_name"/>
+                android:hint="@string/su_full_name_hint"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="28sp"
                 android:padding="8dp"
-                android:text="@string/su_email"/>
+                android:text="@string/su_email"
+                android:textSize="28sp" />
+
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/su_email_hint"
-                android:paddingRight="8dp"
                 android:paddingLeft="8dp"
-                android:id="@+id/email"/>
+                android:paddingRight="8dp"
+                android:hint="@string/su_email_hint"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_password"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:hint="@string/su_password_hint"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:padding="8dp"
-                android:textSize="28sp"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingRight="8dp"
-                android:paddingLeft="8dp"
-                android:hint="@string/su_password_hint"
-                android:id="@+id/password"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_confirm_password"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:hint="@string/su_confirm_password_hint"
-                android:id="@+id/confirm_password"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:text="@string/su_race"
-                android:textSize="28sp"
-                android:padding="8dp"/>
+                android:textSize="28sp" />
+
             <Spinner
+                android:id="@+id/race"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:entries="@array/races"
-                android:id="@+id/race"
-                android:paddingRight="8dp"
-                android:paddingLeft="8dp">
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
             </Spinner>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_weight"
-                android:textSize="28sp"
-                android:padding="8dp" />
+                android:textSize="28sp" />
+
             <EditText
+                android:id="@+id/weight"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="numberDecimal"
-                android:hint="@string/su_weight_hint"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                android:id="@+id/weight"/>
+                android:hint="@string/su_weight_hint"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_height"
-                android:textSize="28sp"
-                android:padding="8dp"/>
+                android:textSize="28sp" />
+
             <EditText
+                android:id="@+id/height"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="numberDecimal"
-                android:hint="@string/su_height_hint"
-                android:paddingRight="8dp"
                 android:paddingLeft="8dp"
-                android:id="@+id/height"/>
+                android:paddingRight="8dp"
+                android:hint="@string/su_height_hint"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_age"
-                android:textSize="28sp"
-                android:padding="8dp"/>
+                android:textSize="28sp" />
+
             <EditText
+                android:id="@+id/age"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/su_age_hint"
                 android:inputType="number"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                android:id="@+id/age"/>
+                android:hint="@string/su_age_hint"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_gender"
-                android:textSize="28sp"
-                android:padding="8dp"/>
+                android:textSize="28sp" />
+
             <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:id="@+id/gender_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:padding="8dp">
+
                 <RadioButton
+                    android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_male"
-                    android:id="@+id/male"/>
+                    android:text="@string/btn_male" />
+
                 <RadioButton
+                    android:id="@+id/female"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_female"
-                    android:id="@+id/female"/>
+                    android:text="@string/btn_female" />
             </RadioGroup>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_smoke_hist"
-                android:padding="8dp"
-                android:textSize="28sp"/>
+                android:textSize="28sp" />
+
             <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:id="@+id/smoke_hist_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/smoke_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/smoke_no"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_diabetes_hist"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:id="@+id/diabetes_hist_options"
                 android:padding="8dp">
+
                 <RadioButton
+                    android:id="@+id/smoke_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/diabetes_yes"/>
+                    android:text="@string/btn_yes" />
+
                 <RadioButton
+                    android:id="@+id/smoke_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/diabetes_no"/>
+                    android:text="@string/btn_no" />
             </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_hypertension_hist"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/hypertension_hist_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/hypertension_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/hypertension_no"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_chronic_kidney_hist"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/chronic_kidney_hist_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/chronic_kidney_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/chronic_kidney_no"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_adrenal_disorder_hist"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/adrenal_disorder_hist_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/adrenal_disorder_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/adrenal_disorder_no"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_thyroid_disorder_hist"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/thyroid_hist_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/thyroid_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/thyroid_no"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_birth_control"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/birth_control_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/birth_control_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/birth_control_no"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="28sp"
-                android:text="@string/su_activity_level"
-                android:padding="8dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/activity_lvl_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/activity_lvl_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/activity_lvl_no"/>
-            </RadioGroup>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/su_sleep_apnea_hist"
-                android:textSize="28sp"
-                android:padding="8dp"/>
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/sleep_apnea_options"
-                android:padding="8dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/sleep_apnea_yes"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/sleep_apnea_no"/>
-            </RadioGroup>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="8dp"
-                android:textSize="28sp"
-                android:text="@string/su_pregnant"/>
+                android:text="@string/su_diabetes_hist"
+                android:textSize="28sp" />
+
             <RadioGroup
+                android:id="@+id/diabetes_hist_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/diabetes_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/diabetes_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_hypertension_hist"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/hypertension_hist_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/hypertension_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/hypertension_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_chronic_kidney_hist"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/chronic_kidney_hist_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/chronic_kidney_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/chronic_kidney_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_adrenal_disorder_hist"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/adrenal_disorder_hist_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/adrenal_disorder_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/adrenal_disorder_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_thyroid_disorder_hist"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/thyroid_hist_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/thyroid_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/thyroid_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_birth_control"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/birth_control_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/birth_control_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/birth_control_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_activity_level"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/activity_lvl_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/activity_lvl_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/activity_lvl_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_sleep_apnea_hist"
+                android:textSize="28sp" />
+
+            <RadioGroup
+                android:id="@+id/sleep_apnea_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/sleep_apnea_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_yes" />
+
+                <RadioButton
+                    android:id="@+id/sleep_apnea_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:text="@string/su_pregnant"
+                android:textSize="28sp" />
+
+            <RadioGroup
                 android:id="@+id/pregnant_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:padding="8dp">
+
                 <RadioButton
+                    android:id="@+id/pregnant_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/pregnant_yes"/>
+                    android:text="@string/btn_yes" />
+
                 <RadioButton
+                    android:id="@+id/pregnant_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/pregnant_no"/>
+                    android:text="@string/btn_no" />
             </RadioGroup>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_alcohol_consumption"
-                android:textSize="28sp"
-                android:padding="8dp"/>
+                android:textSize="28sp" />
+
             <RadioGroup
+                android:id="@+id/alcohol_consump_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:id="@+id/alcohol_consump_options"
                 android:padding="8dp">
+
                 <RadioButton
+                    android:id="@+id/alcohol_consump_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/alcohol_consump_yes"/>
+                    android:text="@string/btn_yes" />
+
                 <RadioButton
+                    android:id="@+id/alcohol_consump_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/alcohol_consump_no"/>
+                    android:text="@string/btn_no" />
             </RadioGroup>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
                 android:text="@string/su_sleep_duration"
-                android:textSize="28sp"
-                android:padding="8dp"/>
+                android:textSize="28sp" />
+
             <RadioGroup
+                android:id="@+id/sleep_duration_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:id="@+id/sleep_duration_options"
                 android:padding="8dp">
+
                 <RadioButton
+                    android:id="@+id/sleep_duration_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_yes"
-                    android:id="@+id/sleep_duration_yes"/>
+                    android:text="@string/btn_yes" />
+
                 <RadioButton
+                    android:id="@+id/sleep_duration_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_no"
-                    android:id="@+id/sleep_duration_no"/>
+                    android:text="@string/btn_no" />
             </RadioGroup>
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/su_terms_of_agreement"
-                android:id="@+id/terms_checkbox"
-                android:padding="8dp"/>
+
+
             <Button
+                android:id="@+id/save_changes_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/signup_confirm_btn"
-                android:text="@string/signup"
                 android:layout_gravity="center_horizontal"
-                android:textSize="24sp"
-                android:padding="8dp"/>
+                android:padding="8dp"
+                android:text="@string/save_changes"
+                android:textSize="24sp" />
         </LinearLayout>
-
-
 
 
     </ScrollView>

@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     Button login_btn;
     Button signup_btn;
+    Button forgotPasswordBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         //initializing the buttons
         login_btn = findViewById(R.id.login_btn);
         signup_btn = findViewById(R.id.signup_btn);
+        forgotPasswordBtn = findViewById(R.id.forgot_password);
 
         //signup activity intent
         signup_btn.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //login activity intent
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +40,17 @@ public class MainActivity extends AppCompatActivity {
                 Class loginActivity = LoginActivity.class;
                 Intent intent = new Intent(context, loginActivity);
                 startActivity(intent); //transition to login screen
+            }
+        });
+
+        //forgot password intent
+        forgotPasswordBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = MainActivity.this;
+                Class sendVerificationCodeActivity = SendVerificationCodeActivity.class;
+                Intent intent = new Intent(context, sendVerificationCodeActivity);
+                startActivity(intent);
             }
         });
 

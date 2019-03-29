@@ -11,18 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="24dp"
         android:src="@drawable/smartheart"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:layout_gravity="center_horizontal"
-            android:textSize="24sp"
-            android:id="@+id/login_btn"
-            android:layout_marginBottom="18dp"
-            />
 
         <Button
             android:layout_width="wrap_content"
@@ -32,6 +21,25 @@
             android:paddingTop="8dp"
             android:textSize="24sp"
             android:id="@+id/signup_btn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:id="@+id/login_btn"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:text="@string/forgot_password"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:id="@+id/forgot_password"
+            />
 
 </android.widget.LinearLayout>
 

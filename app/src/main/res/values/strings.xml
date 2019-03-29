@@ -4,7 +4,7 @@
     <!-- Initial page-->
     <string name="login">Login</string>
     <string name="signup">Sign-up</string>
-
+    <string name="forgot_password">Forgot Password?</string>
     <!-- Sign-up Page -->
 
     <!-- Sign-up categories-->
@@ -52,6 +52,9 @@
     <!-- Send Verification Code Page -->
     <string name="verification_btn">Send Verification Code</string>
 
+    <!-- Edit Profile Page -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_changes">Save Changes</string>
     <!-- Hints -->
     <string name="su_full_name_hint">Enter full name here</string>
     <string name="su_email_hint">Enter email address here</string>

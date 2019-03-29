@@ -1,6 +1,8 @@
 package com.example.nerdherd;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,17 +31,27 @@ public class LoginActivity extends AppCompatActivity {
                 Context context = LoginActivity.this;
 
                 if (accountVerification()) {
-                    //TODO login is successful so then move to the next intent
+                    //login is successful so then move to the main page
+                    Class mainPageActivity = MainPageActivity.class;
+                    Intent intent = new Intent(context, mainPageActivity);
+                    startActivity(intent);
                 } else {
-                    //TODO display TOAST msg that either email/password is incorrect
+                    //Display to the user incorrect login entered message
+                    AlertDialog.Builder incorrectLoginAlert =  new AlertDialog.Builder(context);
+                    incorrectLoginAlert.setMessage("Incorrect Email/Password");
+                    incorrectLoginAlert.setPositiveButton("OK", null);
+                    incorrectLoginAlert.setCancelable(true);
+                    incorrectLoginAlert.create().show();
                 }
             }
         });
     }
 
 
-    public static boolean accountVerification(){
+    public boolean accountVerification(){
         //TODO check if email and password are a correct match
-        return true;
+        String email = login_email.getText().toString();
+        String password = login_password.getText().toString();
+        return false;
     }
 }

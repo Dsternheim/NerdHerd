@@ -1,6 +1,7 @@
 package com.example.nerdherd;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
@@ -30,9 +31,11 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Context context = SignupActivity.this;
-                //TODO create the next page signup if every field is valid
+                //go to main page if every field is valid
                 if(validityCheck()){
-
+                    Class mainPageActivity = MainPageActivity.class;
+                    Intent intent = new Intent(context, mainPageActivity);
+                    startActivity(intent);
                 } else {
                     //TODO if not every field valid then highlight the problem and remain on signup page
                         //TODO cont. maybe a TOAST msg or something similar
