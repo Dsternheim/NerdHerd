@@ -32,8 +32,8 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 //
                 if(newPass.equals(confNewPass)){
                     //TODO send new password to DB
-                    Class mainActivity = MainActivity.class;
-                    Intent intent = new Intent(context, mainActivity);
+                    Class loginActivity = LoginActivity.class;
+                    Intent intent = new Intent(context, loginActivity);
                     startActivity(intent);
                 } else {
                     AlertDialog.Builder mismatchPasswords = new AlertDialog.Builder(context);

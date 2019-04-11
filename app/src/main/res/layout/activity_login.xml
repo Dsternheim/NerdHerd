@@ -3,60 +3,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/main_background">
 
     <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/smartheart"
+                android:src="@drawable/githublogosample"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:text="@string/su_email"
-                android:padding="8dp"
-                />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20sp"-->
+                <!--android:text="@string/su_email"-->
+                <!--android:padding="8dp"-->
+                <!---->
+
+                <!--/>-->
+
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:paddingRight="8dp"
-                android:paddingLeft="8dp"
+                android:padding="20dp"
                 android:hint="@string/su_email_hint"
                 android:id="@+id/login_email_field"
+                android:textStyle="italic"
+                android:textColorHint="#ffff"
+                android:state_focused="true"
+                android:state_enabled="true"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_gravity="center_horizontal"
+                android:alpha=".65"
+
                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/su_password"
-                android:textSize="28sp"
-                />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="8dp"-->
+                <!--android:text="@string/su_password"-->
+                <!--android:textSize="28sp"-->
+                <!--/>-->
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
                 android:hint="@string/su_password_hint"
+                android:textColorHint="#ffff"
                 android:id="@+id/login_password_field"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:state_focused="true"
+                android:state_enabled="true"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_gravity="center_horizontal"
+                android:alpha=".65"
                 />
             <Button
                 android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:text="@string/forgot_password"
+                android:textSize="12sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:id="@+id/forgot_password"
+                android:alpha=".75"
+                android:textColor="#FF416C"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:padding="8dp"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
                 android:text="@string/login"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#ffff"
+                android:alpha=".95"
                 android:id="@+id/login"
+                android:background="@drawable/button_rounded"
                 />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_prompt"/>
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="14dp"
+                    android:text="@string/signup"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/signup_btn"
+                    android:alpha=".75"
+                    android:textColor="#FF416C"
+                    />
+            </LinearLayout>
+
 
         </LinearLayout>
     </ScrollView>

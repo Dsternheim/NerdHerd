@@ -11,12 +11,14 @@ import android.widget.Button;
 public class EnterCodeActivity extends AppCompatActivity {
 
     Button enter_btn;
+    Button resend_code_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_code);
 
         enter_btn = findViewById(R.id.enter_btn);
+        resend_code_btn = findViewById(R.id.resend_code_btn);
 
         enter_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +36,13 @@ public class EnterCodeActivity extends AppCompatActivity {
                     codeErrorAlert.setCancelable(true);
                     codeErrorAlert.create().show();
                 }
+            }
+        });
+
+        resend_code_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO resend verification code
             }
         });
     }
