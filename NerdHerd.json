@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "nerdherd",
+  "private_key_id": "a1d3c312c7d2be8be40e42bd05716e7504bf0ab3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDDztb+jzLE1zLj\n167tRPwq7jBTNF+YlrtA6kGW2/ZxK95gAPviERr7KP84XUv2dybKc9RefCvH+fgG\n0Pnc45KW3Q6+X4oO+cvTv1JR6nSOI9P4lU4YE/5yHTQDNXSd4w+GRaXN+/A4M4xB\nft/Fn4Lk8KrfTARRfTPHAszlGApU2fMTynOBI10I5PZtiyAW/369g5wwHsQAybrW\nQYyN6Me+92xTZF7NBRXdT6HIj7yKEbQBA6OTUuL7IN8fOrqbqc9KxmamCPElXrS8\nwa1VzNhvnKwsokd/dKIb9vA3VnLJFG1rjkF2sDFM7q80myp+AgH9OkuKO9QLbFb4\n2/Nf9OovAgMBAAECggEAF+GNNSTP41P/v+wZSJTmUHIWcL9tfVW85tDrSPPw3aKl\nD35vOgYuDT3VytEOJ7QmhgCUgSWRzWT+TA6GutsCkOXLG4rZcrQimOO3rYfzyTYz\nbxj+mk8t9Er9gfquC2ebCBxMeY/ln2UiEQbhUd//fd6gaHWD/VBQ1U/RH4vMDscD\ndyfBOv64jwr/9DXkW8kdPHnX+H4uHIeFE/74zvo5gDfyhg6PDUpziVXIQmqre8HG\nYQ1PTrUagf1RfbsL6e5NENVvsVvKSaAfnuJUWxb1P5PJfdinzylcVv2lT6FtU47A\naLMarlJ9JjmS8n8bP1OcRkExZKRenx3sjWU6WTWoGQKBgQDuXiZIY8UAKXzZ30RM\nY5KFPQIv6ZXwwCsZQQT1pYtXUGinTbpOoszcyLV8FBMaTe6Wvah8/SX1LpwVrUPA\nw8zx4YwrARgNVlIdunme3gdBmNd4VxEtrwCLLWZxwLtEyjPu0ftweN1voul+PtIs\nIbEm2Ya1510zkRb4ez8s9XQ8ewKBgQDSSsG3yjGBfP+rEuCr3kvK+nc5RrCVq/1J\nXHs+GHhT0Q/BNe2K7uM541U0NRTl7bE34koBFM0YGt1knpAEacaKnUHGVQwwaBDf\nriU7/4+D3Hhdc0zT/8DgcOMNdadaCN3/Vo3vmLzFKhPCLENZTmuUhaDTztHW2Ird\n0uj6Wfnc3QKBgGKS8MXy7F76yTTYTchBTTBoYGUr9ePPtIMHDmP/h7Yd/IljbW5j\niNCs99BOBPBV1hrkZ674iR/xnH6iXmhzEGfe3DZUh3vMfLzqhq0aKGoKKOENMH9x\n5Ymoxrq39zmlXQCgOZjzgq9N8b1RgVzaugXU4w6KlVJj59nuLdwLzXvNAoGBANDL\nJNgEy26T243R6nz69CoO0T1vMHkLESs7xan7xc0CsC/YCYh+c+HQE5MIeT1p6SFh\nbrTwIEqksdjrjnazR0vto5b2bmnJiadtUs7liWsVBfVTO57qOmkd7HI6tPSyBSk2\nmSqhbhwdEQ0jwaL0N+B5ZRuoJ7S3v/lLJcMcfveJAoGBAIG9KgQ5qDrhjDepw7s3\nz6jbwO6s2/2GjXOk50KquJ/QTPMxMAshN4ttVX1MJm9ROUsyV2X6Luu5nqmaDFBE\nwDgFCE1BqqyuJ+jZ8TFu/nFPBiFk2g2YU1xBY4OnsVBQoootNar3Bh5Bs4UGtP3i\nFCrkaLDj+l/8NDVv7VQ6XmWA\n-----END PRIVATE KEY-----\n",
+  "client_email": "health-db-auth@nerdherd.iam.gserviceaccount.com",
+  "client_id": "101850760455230908697",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/health-db-auth%40nerdherd.iam.gserviceaccount.com"
+}
