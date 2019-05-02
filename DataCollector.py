@@ -4,8 +4,8 @@ import pandas as pd
 import datetime
 import numpy as np
 
-CLIENT_ID = '22DDTT'
-CLIENT_SECRET = 'd24e5f9ed8ff9d39a506b006c2e5ce85'
+CLIENT_ID = 'xxx'
+CLIENT_SECRET = 'xxxx'
 
 server = Oauth2.OAuth2Server(CLIENT_ID, CLIENT_SECRET)
 server.browser_authorize()
